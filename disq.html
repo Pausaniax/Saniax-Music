@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saniax Music</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: antiquewhite;
+            color: #333;
+            position: relative;
+        }
+
+        header {
+            background-color: #444;
+            color: #fff;
+            padding: 20px 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        footer {
+             background-color: #444;
+             color: #fff;
+             padding: 10px 0;
+             text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            opacity: 1;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .album {
+            background: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .album:hover {
+            transform: scale(1.05);
+        }
+
+        .album img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .album h2 {
+           margin: 0;
+           padding: 15px;
+           font-size: 1.2rem;
+           background-color: #f4f4f4;
+           text-align: center;
+        }
+
+        footer {
+            background-color: #444;
+            color: #fff;
+            padding: 10px 0;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+
+        .sidebar {
+            position: fixed;
+            top: 50%; 
+            right: 20px; 
+            transform: translateY(-50%); 
+            background-color: #f8f8f8;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(11, 20, 1, 0.2);
+            opacity: 1;
+            text-align: left;
+        }
+
+        .sidebar h2 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .sidebar ul li a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Saniax Music</h1>
+    </header>
+    <main>
+        <section class="gallery">
+            <div class="album">
+                <a href="Ardillas.html">
+                    <img src="Imagenes/ardillas.png" alt="Calvin">
+                </a>
+                <h2>Calvin y la pandilla</h2>
+            </div>
+            <div class="album">
+                <a href="totote.html">
+                    <img src="Imagenes/djtotote.jpg" alt="totote">
+                </a>
+                <h2>DJ Totote</h2>
+            </div>
+            <div class="album">
+                <a href="cucaracha.html">
+                    <img src="Imagenes/djcucaracha.jpg" alt="cucaracha">
+                </a>
+                <h2>DJ Cucaracha</h2>
+            </div>
+            <div class="album">
+                <a href="Rwar.html">
+                    <img src="Imagenes/gatotrap.png" alt="rwar">
+                </a>
+                <h2>Rwar La R</h2>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="album">
+                <a href="sedobleta.html">
+                    <img src="Imagenes/Swampy.png" alt="sedobleta">
+                </a>
+                <h2>Sedobleta</h2>
+            </div>
+            <div class="album">
+                <a href="Travis.html">
+                    <img src="Imagenes/trabis.png" alt="trabis">
+                </a>
+                <h2>Trafish Scott</h2>
+            </div>
+            <div class="album">
+                <a href="carrion.html">
+                    <img src="Imagenes/enanocarrion.jpg" alt="carrion">
+                </a>
+                <h2>Enano Carrión</h2>
+            </div>
+            <div class="album">
+                <a href="bizagraz.html">
+                    <img src="Imagenes/bizagraz.jpg" alt="bizagraz">
+                </a>
+                <h2>Bizagraz</h2>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <i>2024 Saniax Music. Todos los derechos reservados.</i></p>
+    </footer>
+
+    <aside class="sidebar">
+        <h2>Explora la web</h2>
+        <ul>
+            <li><a href="inicio.html">Página Principal</a></li>
+            <li><a href="contacto.html">Contactanos</a></li>
+        </ul>
+    </aside>
+</body>
+</html>
